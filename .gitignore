@@ -1,0 +1,23 @@
+# Ignore build and dependency folders
+node_modules/
+bin/
+obj/
+
+# Ignore environment files
+.env
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+*.tmp
+*.swp
+
+# Ignore Visual Studio / VS Code files
+.vscode/
+*.user
+*.suo
