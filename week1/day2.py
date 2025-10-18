@@ -72,7 +72,8 @@ def ollama_sdk_call():
     ollama = OpenAI(base_url="http://localhost:11434/v1", api_key="olla-api-key")
 
     response = ollama.chat.completions.create(
-        model="llama3.2",
+        # model="llama3.2",
+        model="deepseek-r1:1.5b",
         messages=[
             # {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": "Tell me a fun fact"}
