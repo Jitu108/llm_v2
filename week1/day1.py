@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from week2 import scraper
+from scraper import fetch_website_contents
 from IPython.display import Markdown, display
 from openai import OpenAI
 
@@ -46,7 +46,7 @@ def message_for(website: str) -> list[dict[str, str]]:
 ]
 
 def summarize_website(url: str) -> str:
-    website = scraper.fetch_website_contents(url)
+    website = fetch_website_contents(url)
 
     response = openai.chat.completions.create(
         model="gpt-4.1-nano",
